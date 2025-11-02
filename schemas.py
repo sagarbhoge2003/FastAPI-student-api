@@ -3,6 +3,11 @@ class UserCreate(BaseModel):
     username: str
     password: str
 
+class LoginModel(BaseModel):
+    username: str
+    password: str
+
+
 class UserOut(BaseModel):
     id: int
     username: str
@@ -15,7 +20,6 @@ class UserOut(BaseModel):
 # ========================
 # Student Schemas
 # ========================
-# schemas.py
 from pydantic import BaseModel
 
 class StudentBase(BaseModel):
